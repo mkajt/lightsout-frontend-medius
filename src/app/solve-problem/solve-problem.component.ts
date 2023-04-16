@@ -17,7 +17,7 @@ export class SolveProblemComponent {
 
   btnClickSize(size: number) {
     this.matrixSize = size;
-    this.cellSize = (40/size) + "vw";
+    this.cellSize = (60/size) + "vmin";
   }
 
   btnClickCell(index: number) {
