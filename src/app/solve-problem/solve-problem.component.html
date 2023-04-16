@@ -1,1 +1,27 @@
-<p>solve-problem works!</p>
+<div class="container-body container-fluid d-flex flex-column min-vh-100">
+  <div class="row" id="content">
+    <div class="col-sm-7" id="left-col">
+      <div *ngFor="let row of [].constructor(matrixSize); index as i" class="row-matrix">
+        <span *ngFor="let cell of [].constructor(matrixSize) ; index as j" class="cell-matrix" id="cell{{matrixSize*i+j}}" (click)="btnClickCell(matrixSize*i+j)"
+              [ngStyle]="{'width': cellSize, 'height': cellSize, 'background-color': cellColor(matrixSize*i+j)}">
+          {{matrixSize*i+j}}
+        </span>
+      </div>
+    </div>
+    <div class="col-sm-5 pe-5">
+      <div class="right-col-text">select size:</div>
+      <div class="d-grid gap-2 col-4 mx-auto mt-4" id="sizeButtons">
+        <button class="btn btn-size" type="button" (click)="btnClickSize(3)">3 x 3</button>
+        <button class="btn btn-size" type="button" (click)="btnClickSize(4)">4 x 4</button>
+        <button class="btn btn-size" type="button" (click)="btnClickSize(5)">5 x 5</button>
+        <button class="btn btn-size" type="button" (click)="btnClickSize(6)">6 x 6</button>
+        <button class="btn btn-size" type="button" (click)="btnClickSize(7)">7 x 7</button>
+        <button class="btn btn-size" type="button" (click)="btnClickSize(8)">8 x 8</button>
+      </div>
+      <div class="d-grid gap-2 col-4 mx-auto mt-5">
+        <button class="btn btn-other" type="button">get solution</button>
+        <button class="btn btn-other" type="button">reset</button>
+      </div>
+    </div>
+  </div>
+</div>

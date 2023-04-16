@@ -1,3 +1,9 @@
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 3vmin;
+}
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -28,5 +34,5 @@
 .topnav a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 2.5vh;
+  font-size: 2.5vmin;
 }

@@ -1,0 +1,43 @@
+#content {
+  padding-top: 10%;
+}
+
+.right-col-text {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 3vmin;
+}
+
+.btn-size {
+  border: 1px solid black !important;
+}
+
+.btn-size:hover {
+  color: gold;
+}
+
+.btn-other {
+  background-color: gold;
+}
+
+.btn-other:hover {
+  background-color: gold;
+  color: white;
+}
+
+#left-col {
+  margin: auto;
+  padding-top: 4em;
+}
+
+.row-matrix {
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+}
+
+.cell-matrix {
+  display: inline-block;
+  border: 1px solid #212121;
+}
