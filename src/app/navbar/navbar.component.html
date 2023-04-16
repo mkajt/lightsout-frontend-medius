@@ -12,12 +12,12 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav topnav ms-auto">
         <li class="nav-item active me-4">
-          <a class="nav-link" href="#">Solve problem</a>
+          <a class="nav-link" (click)="color('solve')" [ngStyle]="{'color': colorSolve}" href="#" routerLink="/solve" routerLinkActive="active">solve problem</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Create problem</a>
+          <a class="nav-link" (click)="color('create')" [ngStyle]="{'color': colorCreate}" href="#" routerLink="/create" routerLinkActive="active">create problem</a>
         </li>
       </ul>
     </div>

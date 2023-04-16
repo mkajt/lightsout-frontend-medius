@@ -2,15 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module'
 import { NavbarComponent } from './navbar/navbar.component';
+import { SolveProblemComponent } from './solve-problem/solve-problem.component';
+import { CreateProblemComponent } from './create-problem/create-problem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    SolveProblemComponent,
+    CreateProblemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
