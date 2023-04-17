@@ -1,17 +1,37 @@
 export class Problem {
-  problemId: number | undefined;
-  matrix: number[] | undefined;
-  matrixSize: number | undefined;
+  problemId: number;
+  matrix: number[];
+  matrixSize: number;
+
+  constructor(problemId: number, matrix: number[], matrixSize: number) {
+    this.problemId = problemId;
+    this.matrix = matrix;
+    this.matrixSize = matrixSize;
+  }
+
 }
 
 export class Solution {
-  solutionId: number | undefined;
-  problem: Problem | undefined;
-  solutionSteps: Solution_step[] | undefined;
+  solutionId: number;
+  problem: Problem;
+  solutionSteps: Solution_step[];
+
+  constructor(solutionId: number, problem: Problem, solutionSteps: Solution_step[]) {
+    this.solutionId = solutionId;
+    this.problem = problem;
+    this.solutionSteps = solutionSteps;
+  }
+
 }
 
 export class Solution_step {
-  solutionStepId: number | undefined;
-  solutionSteps: number[] | undefined;
-  sequence: number | undefined;
+  solutionStepId: number;
+  solutionSteps: number;
+  sequence: number;
+
+  constructor(solutionStepId: number, solutionSteps: number, sequence: number) {
+    this.solutionStepId = solutionStepId;
+    this.solutionSteps = solutionSteps;
+    this.sequence = sequence;
+  }
 }

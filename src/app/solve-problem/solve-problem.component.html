@@ -2,8 +2,8 @@
   <div class="row" id="content">
     <div class="col-sm-7" id="left-col">
       <div *ngFor="let row of [].constructor(matrixSize); index as i" class="row-matrix">
-        <span *ngFor="let cell of [].constructor(matrixSize) ; index as j" class="cell-matrix" id="cell{{matrixSize*i+j}}" (click)="btnClickCell(matrixSize*i+j)"
-              [ngStyle]="{'width': cellSize, 'height': cellSize, 'background-color': cellColor(matrixSize*i+j)}">
+        <span *ngFor="let cell of [].constructor(matrixSize); index as j" class="cell-matrix" id="cell{{matrixSize*i+j}}" (click)="btnClickCell(matrixSize*i+j)"
+              [ngStyle]="{'width': cellSize, 'height': cellSize, 'background-color': 'black' | colorArray}">
           {{matrixSize*i+j}}
         </span>
       </div>

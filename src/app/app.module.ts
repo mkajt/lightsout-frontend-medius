@@ -7,13 +7,15 @@ import { AppRoutingModule } from './app-routing.module'
 import { NavbarComponent } from './navbar/navbar.component';
 import { SolveProblemComponent } from './solve-problem/solve-problem.component';
 import { CreateProblemComponent } from './create-problem/create-problem.component';
+import { ColorArrayPipe } from './pipe/color-array.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SolveProblemComponent,
-    CreateProblemComponent
+    CreateProblemComponent,
+    ColorArrayPipe
   ],
   imports: [
     BrowserModule,
