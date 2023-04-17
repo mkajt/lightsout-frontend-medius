@@ -1,6 +1,9 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
+<<<<<<< HEAD
 import { Problem } from "../entity";
+=======
+>>>>>>> 3c2e1aa (Still a bug)
 import {catchError, Observable, throwError} from "rxjs";
 
 @Injectable({
@@ -22,8 +25,11 @@ export class SolveProblemService {
     );
   }
 
+<<<<<<< HEAD
   private processError(error: any): Promise<any> {
     console.error('Ups! Something went wrong.', error);
     return Promise.reject(error.message || error);
   }
+=======
+>>>>>>> 3c2e1aa (Still a bug)
 }

@@ -2,8 +2,13 @@
   <div class="row" id="content">
     <div class="col-sm-7" id="left-col">
       <div *ngFor="let row of [].constructor(matrixSize); index as i" class="row-matrix">
+<<<<<<< HEAD
         <span *ngFor="let cell of [].constructor(matrixSize); index as j" class="cell-matrix" id="cell{{matrixSize*i+j}}" (click)="btnClickCell(matrixSize*i+j)"
               [ngStyle]="{'width': cellSize, 'height': cellSize, 'background-color': 'black' | colorArray}">
+=======
+        <span *ngFor="let cell of [].constructor(matrixSize) ; index as j" class="cell-matrix" id="cell{{matrixSize*i+j}}" (click)="btnClickCell(matrixSize*i+j)"
+              [ngStyle]="{'width': cellSize, 'height': cellSize, 'background-color': currentMatrix[matrixSize*i+j] | colorArray}">
+>>>>>>> 3c2e1aa (Still a bug)
           {{matrixSize*i+j}}
         </span>
       </div>
