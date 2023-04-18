@@ -52,7 +52,7 @@ export class CreateProblemComponent {
   checkForSolution() {
 
     // @ts-ignore
-    let problem: Problem = { matrix: this.currentMatrix, matrixSize: this.matrixSize};
+    let problem: Problem = { matrix: this.currentMatrix, matrixSize: this.matrixSize };
     let newProblemId = -1;
     this.appService.checkForSolution(problem).pipe(mapNumber).subscribe(
       id => {

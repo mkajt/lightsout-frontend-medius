@@ -1,7 +1,12 @@
-.navbar-brand {
+/*.navbar-brand {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 3vmin;
+  color: white;
+}*/
+
+.logotype img {
+  width: 22vh;
 }
 
 .navbar-toggler:focus,

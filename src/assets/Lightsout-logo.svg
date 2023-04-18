@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Lightsout-logo.svg"
+   viewBox="0 0 787.20376 124.05047"
+   height="124.05048"
+   width="787.20374"
+   id="svg833"
+   version="1.1">
+  <metadata
+     id="metadata839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs837" />
+  <sodipodi:namedview
+     inkscape:current-layer="layer1"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="2391"
+     inkscape:cy="-402.79853"
+     inkscape:cx="1003.0803"
+     inkscape:zoom="0.80382885"
+     showgrid="false"
+     id="namedview835"
+     inkscape:window-height="1261"
+     inkscape:window-width="2400"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     transform="translate(-159.52465,-99.243823)"
+     id="g841"
+     inkscape:label="Image"
+     inkscape:groupmode="layer">
+    <path
+       sodipodi:nodetypes="scccczscscccscsss"
+       id="path850"
+       d="m 735.23883,218.29827 c 2.53048,-0.83853 4.86395,-5.54871 4.86395,-5.54871 0,0 7.40378,-2.55394 5.76231,-8.33752 2.64474,-3.55381 0.42769,-6.19358 0.42769,-6.19358 0,0 2.55095,-4.97113 -1.87271,-6.26336 -3.00643,0.47643 23.13014,-38.37418 24.49428,-41.14139 1.36413,-2.76721 14.12199,-32.65324 -22.54819,-45.2608 -35.01057,-12.036971 -55.36832,14.76932 -55.36832,14.76932 0,0 -16.82422,14.86234 1.1185,42.97733 14.53709,22.7786 17.42111,28.72531 17.42111,28.72531 0,0 -5.17947,2.2599 -2.50535,6.4318 -2.82189,2.72852 -0.50107,6.19358 -0.50107,6.19358 0,0 -1.33673,3.04419 -0.0682,4.77241 1.38404,1.88561 5.56481,3.6902 5.56481,3.6902 0,0 1.93179,4.57383 4.02377,5.43559 5.56416,2.29212 13.56141,1.61412 19.18745,-0.25018 z"
+       style="fill:none;stroke:#ffd700;stroke-width:6.45407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="csc"
+       id="path852"
+       d="m 746.3442,186.52744 c 0,0 -18.29117,15.0537 -34.52831,1.16464 -1.0148,-0.86805 -5.4238,-4.33832 -7.45342,-6.07448"
+       style="fill:none;stroke:#ffd700;stroke-width:2.57941;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cszsczsscszssc"
+       id="path854"
+       d="m 731.89806,192.4215 c 0,0 7.58155,-43.39634 12.15807,-48.7482 2.89392,-3.38419 3.64234,-2.17177 4.63911,-0.68621 0.99677,1.48557 1.43489,6.00342 -2.92705,10.37869 -5.30184,5.31801 -17.17574,-2.40168 -17.17574,-2.40168 0,0 -6.8482,-7.11925 -5.46751,-13.89542 1.38068,-6.77617 3.8659,-6.86195 5.13615,-6.86195 2.46985,0 5.46751,3.25943 4.91524,10.0356 -0.56207,6.89637 -10.78315,13.87397 -10.78315,13.87397 0,0 -7.23907,4.1859 -11.58397,0.5361 -8.10958,-6.8122 -4.1492,-11.50279 -3.50694,-12.05129 0.64226,-0.5485 4.50104,-1.67259 6.71012,5.3609 2.20911,7.03349 3.77721,12.35978 4.63912,19.04189 1.1487,8.90566 2.78897,25.30338 2.78897,25.30338"
+       style="fill:none;stroke:#ffd700;stroke-width:3.63805;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     transform="translate(-159.52465,-99.243823)"
+     inkscape:label="logo"
+     id="layer1"
+     inkscape:groupmode="layer">
+    <text
+       id="text848"
+       y="201.85849"
+       x="146.82465"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:120px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium';fill:#161600;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;fill-opacity:1"
+         dx="0.1"
+         y="201.85849"
+         x="146.82465"
+         id="tspan846"
+         sodipodi:role="line">LIGHTS      UT</tspan></text>
+  </g>
+</svg>
