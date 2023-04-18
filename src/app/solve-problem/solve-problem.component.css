@@ -2,6 +2,12 @@
   padding-top: 7%;
 }
 
+.error {
+  font-size: 4vmin;
+  text-align: left;
+  margin-left: 12.5%;
+}
+
 .right-col-text {
   text-align: center;
   font-family: 'Montserrat', sans-serif;

@@ -1,7 +1,8 @@
 <div class="container-body container-fluid d-flex flex-column min-vh-100">
   <div class="row" id="content">
     <div class="col-sm-7" id="left-col">
-      <div *ngIf="selectedSizeProblems !== undefined">
+      <div *ngIf="err" class="error">Ups! {{err}}</div>
+      <div *ngIf="selectedSizeProblems !== undefined && !err">
         <div *ngFor="let row of [].constructor(matrixSize); index as i" class="row-matrix">
           <span *ngFor="let cell of [].constructor(matrixSize) ; index as j" class="cell-matrix" id="cell{{matrixSize*i+j}}"
                 (click)="btnClickCell(matrixSize*i+j)"
