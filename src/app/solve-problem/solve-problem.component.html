@@ -25,10 +25,10 @@
         <button class="btn btn-size" type="button" (click)="btnClickSize(7)">7 x 7</button>
         <button class="btn btn-size" type="button" (click)="btnClickSize(8)">8 x 8</button>
       </div>
-      <div class="right-col-text moves mt-4">number of moves:<br>
+      <div class="right-col-text moves mt-4" *ngIf="currentMatrix !== undefined">number of moves:<br>
         <span class="number-text">{{numberOfMoves}}</span>
       </div>
-      <div class="d-grid gap-2 col-4 mx-auto mt-4" id="otherButtons">
+      <div class="d-grid gap-2 col-4 mx-auto mt-4 mb-4" id="otherButtons" *ngIf="currentMatrix !== undefined">
         <button class="btn btn-other" type="button" (click)="getSolution()">get solution</button>
         <button class="btn btn-other" type="button" (click)="resetMatrix()">reset</button>
       </div>

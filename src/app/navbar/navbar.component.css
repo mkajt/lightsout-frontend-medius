@@ -44,3 +44,15 @@
 .nav-link.active {
   color: gold;
 }
+
+@media only screen and (max-width:575px) {
+
+  .navbar-brand {
+    font-size: 4vmin;
+  }
+
+  .topnav a {
+    font-size: 3.5vmin;
+  }
+
+}

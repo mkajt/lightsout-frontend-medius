@@ -19,6 +19,7 @@ export class CreateProblemComponent {
   cellIndex: number | undefined;
   currentMatrix: number[] | undefined;
   circleSize = "";
+  message = "";
   err: string | undefined;
 
   private solution: Solution | undefined;
@@ -44,6 +45,8 @@ export class CreateProblemComponent {
     for (let i = 0; i < this.matrixSize*this.matrixSize; i++) {
       this.currentMatrix?.push(0);
     }
+    this.solutionSteps = undefined;
+    this.message = "";
   }
 
   checkForSolution() {
@@ -54,13 +57,15 @@ export class CreateProblemComponent {
     this.appService.checkForSolution(problem).pipe(mapNumber).subscribe(
       id => {
         if (id == -1) {
-          this.err = 'Unsolvable problem.';
+          this.message = 'Unsolvable problem.';
         }
         newProblemId = id;
         this.getSolution(id);
+        this.message = 'Congratulations! You have created a solvable problem.';
+      }, error => {
+        this.err = error;
       }
     );
-
   }
 
   private getSolution(problemId: number) {
@@ -69,7 +74,6 @@ export class CreateProblemComponent {
       solutions => {
         this.solution = solutions[0];
         this.err = '';
-        console.log(this.solution);
         this.solutionSteps = this.solution?.solutionSteps[0].solutionSteps;
         this.currentMatrix = this.solution.problem.matrix.slice();
       }, error => {
@@ -80,7 +84,6 @@ export class CreateProblemComponent {
 
   resetMatrix() {
     this.setMatrix();
-    this.solutionSteps = undefined;
   }
 
 }

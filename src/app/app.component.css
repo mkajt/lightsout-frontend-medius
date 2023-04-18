@@ -1,5 +1,10 @@
+.container-body {
+  background-color: white;
+}
+
 #content {
   padding-top: 7%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .error {
@@ -9,13 +14,13 @@
 
 .right-col-text {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 3vmin;
 }
 
 .btn-size {
   border: 1px solid black !important;
+  font-weight: 400;
 }
 
 .btn-size:hover {
@@ -69,4 +74,26 @@
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 50%;
+}
+
+@media only screen and (max-width:575px) {
+  #right-col {
+    padding-right: 0.8em;
+    padding-top: 2em;
+  }
+
+  .right-col-text {
+    font-size: 3vmax;
+  }
+
+  .row-matrix {
+    margin: auto;
+  }
+
+  .error {
+    position: relative;
+    top: 10vh;
+    font-size: 2.5vmax;
+  }
+
 }

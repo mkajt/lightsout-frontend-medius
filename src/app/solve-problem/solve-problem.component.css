@@ -1,8 +1,21 @@
 .number-text {
   font-weight: 600;
-  font-size: 2.5vmin;
+  font-size: 2.5vmin !important;
 }
 
 .moves {
-  font-size: 2vmin;
+  font-size: 2.2vmin !important;
+}
+
+@media only screen and (max-width:575px) {
+
+  .number-text {
+    font-weight: 600;
+    font-size: 2.5vmax;
+  }
+
+  .moves {
+    font-size: 2.5vmax !important;
+  }
+
 }

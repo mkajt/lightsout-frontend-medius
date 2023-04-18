@@ -9,6 +9,7 @@ import { SolveProblemComponent } from './solve-problem/solve-problem.component';
 import { CreateProblemComponent } from './create-problem/create-problem.component';
 import { ColorArrayPipe } from './pipe/color-array.pipe';
 import { ShowCirclePipe } from './pipe/show-circle.pipe';
+import { InstructionsComponent } from './instructions/instructions.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ShowCirclePipe } from './pipe/show-circle.pipe';
     SolveProblemComponent,
     CreateProblemComponent,
     ColorArrayPipe,
-    ShowCirclePipe
+    ShowCirclePipe,
+    InstructionsComponent
   ],
   imports: [
     BrowserModule,
