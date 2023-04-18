@@ -1,14 +1,7 @@
-export class Problem {
-  problemId: number;
+export interface Problem {
+  problemId: number | undefined;
   matrix: number[];
   matrixSize: number;
-
-  constructor(problemId: number, matrix: number[], matrixSize: number) {
-    this.problemId = problemId;
-    this.matrix = matrix;
-    this.matrixSize = matrixSize;
-  }
-
 }
 
 export class Solution {

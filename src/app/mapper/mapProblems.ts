@@ -6,11 +6,7 @@ export function mapProblems(response: Observable<any>): Observable<Problem[]> {
   return response.pipe(
     map(data => {
       return data.map((problemData: any) => {
-        return new Problem(
-          problemData.problemId,
-          problemData.matrix,
-          problemData.matrixSize
-        );
+        return {problemId: problemData.problemId, matrix: problemData.matrix, matrixSize: problemData.matrixSize};
       });
     })
   );

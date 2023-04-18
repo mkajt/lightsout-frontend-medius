@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SolveProblemService } from "./solve-problem.service";
+import { AppService } from "../app.service";
 import {Problem, Solution, Solution_step} from "../entity";
 import { mapProblems } from "../mapper/mapProblems";
 import { mapSolutions } from "../mapper/mapSolutions";
@@ -7,12 +7,12 @@ import { mapSolutions } from "../mapper/mapSolutions";
 @Component({
   selector: 'app-solve-problem',
   templateUrl: './solve-problem.component.html',
-  styleUrls: ['./solve-problem.component.css'],
-  providers: [SolveProblemService]
+  styleUrls: ['./solve-problem.component.css', '../app.component.css'],
+  providers: [AppService]
 })
 export class SolveProblemComponent {
 
-  constructor(private solveProblemService: SolveProblemService) {}
+  constructor(private appService: AppService) {}
 
   matrixSize = 0;
   cellSize = "";
@@ -70,7 +70,7 @@ export class SolveProblemComponent {
 
   btnClickCell(index: number) {
     this.cellIndex = index;
-    this.currentMatrix = this.solveProblemService.changeValuesInMatrix(this.currentMatrix, this.matrixSize, this.cellIndex);
+    this.currentMatrix = this.appService.changeValuesInMatrix(this.currentMatrix, this.matrixSize, this.cellIndex);
     this.numberOfMoves++;
   }
 
@@ -78,7 +78,7 @@ export class SolveProblemComponent {
     this.numberOfMoves = 0;
     if (this.solveProblem == undefined) {return;}
 
-    this.solveProblemService.getSolutionForProblem(this.solveProblem.problemId)
+    this.appService.getSolutionForProblem(this.solveProblem.problemId)
       .pipe(mapSolutions).subscribe(
       solutions => {
         this.solution = solutions[0];
@@ -101,7 +101,7 @@ export class SolveProblemComponent {
 
 
   ngOnInit(): void {
-    this.solveProblemService.getProblems().pipe(mapProblems).subscribe(
+    this.appService.getProblems().pipe(mapProblems).subscribe(
       problems => {
         this.allProblems = problems;
         this.err = ''; // Reset error message if it exists

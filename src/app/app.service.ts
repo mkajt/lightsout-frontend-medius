@@ -1,11 +1,12 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
-import { catchError, filter, Observable, throwError } from "rxjs";
+import { catchError, Observable, throwError } from "rxjs";
+import {Problem} from "./entity";
 
 @Injectable({
   providedIn: 'root'
 })
-export class SolveProblemService {
+export class AppService {
 
   constructor(private http: HttpClient) {}
 
@@ -71,10 +72,20 @@ export class SolveProblemService {
     );
   }
 
-  public getSolutionForProblem(problemId: number) : Observable<any>{
+  public getSolutionForProblem(problemId: number | undefined) : Observable<any>{
     const url = this.apiUrl + '/solutions/problem/' + problemId;
     return this.http.get(url).pipe(
       catchError(err =>  {
+        console.log('Error: ', err);
+        return throwError('Something went wrong.');
+      })
+    );
+  }
+
+  public checkForSolution(problem: Problem): Observable<any> {
+    const url = this.apiUrl + '/problems';
+    return this.http.post(url, problem).pipe(
+      catchError(err => {
         console.log('Error: ', err);
         return throwError('Something went wrong.');
       })

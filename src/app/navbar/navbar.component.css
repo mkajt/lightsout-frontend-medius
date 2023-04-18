@@ -36,3 +36,11 @@
   font-weight: 500;
   font-size: 2.5vmin;
 }
+
+.nav-link {
+  color: #dbd5d1;
+}
+
+.nav-link.active {
+  color: gold;
+}
