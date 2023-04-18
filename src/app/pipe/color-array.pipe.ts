@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ColorArrayPipe implements PipeTransform {
 
-  transform(value: any): string[] {
-    return value.map((val: number) => val === 1 ? 'gold' : '#363636');
+  transform(value: any): string {
+    return value === 1 ? 'gold' : '#363636';
   }
 
 }

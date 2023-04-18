@@ -1,5 +1,5 @@
 #content {
-  padding-top: 10%;
+  padding-top: 7%;
 }
 
 .right-col-text {
@@ -21,9 +21,24 @@
   background-color: gold;
 }
 
+#otherButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn-other:hover {
   background-color: gold;
   color: white;
+}
+
+.number-text {
+  font-weight: 600;
+  font-size: 2.5vmin;
+}
+
+.moves {
+  font-size: 2vmin;
 }
 
 #right-col {
@@ -44,6 +59,18 @@
 }
 
 .cell-matrix {
-  display: inline-block;
+  display: flex;
   border: 1px solid #212121;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
 }
