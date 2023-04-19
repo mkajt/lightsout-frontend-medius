@@ -57,7 +57,7 @@ export class CreateProblemComponent {
     this.appService.checkForSolution(problem).pipe(mapNumber).subscribe(
       id => {
         if (id == -1) {
-          this.message = 'Unsolvable problem.';
+          this.message = 'Ups! You have created unsolvable problem.';
         }
         newProblemId = id;
         this.getSolution(id);

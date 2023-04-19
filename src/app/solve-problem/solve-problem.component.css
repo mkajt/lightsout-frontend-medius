@@ -11,7 +11,7 @@
 
   .number-text {
     font-weight: 600;
-    font-size: 2.5vmax;
+    font-size: 2.5vmax !important;
   }
 
   .moves {
