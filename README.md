@@ -1,27 +1,14 @@
-# LightsoutFrontend
+# Lights Out Puzzle Game
+Welcome to Lights Out - a puzzle game that will challenge your mind and keep you entertained for hours! This game consists of two projects - the backend and frontend - which work together to provide a seamless gaming experience.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+## Backend
+The backend is built with Spring Boot, uses hibernate and spring data jpa to manage a h2 database with three tables: Problem, Solution, and Solution_step. It exposes several rest APIs that allow users to retrieve and create problems and solutions. To solve the puzzles, Lights Out uses an algorithm called Light Chasing, which is sure to keep you on your toes. You can run the backend by using the commands **mvn clean install** and **mvn spring-boot:run** or by simply running it in Intellij Idea.
 
-## Development server
+## Frontend
+The frontend is built with Angular and Bootstrap, is easy to use and designed with mobile devices in mind. It consists of three parts: solve problem, create problem, and instructions. The solve problem section allows you to select a problem size and attempt to solve it by clicking on the board. If you get stuck, you can click "get solution" for help or reset the board entirely. The create problem section lets you build your own puzzles by clicking on the board and then checking for a solution. In the instructions section, you can learn more about the game and its rules. To run the frontend, use the commands **npm install** and **npm run start** or simply run it in Webstorm Idea.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Lights Out is a fun and challenging game that will put your puzzle-solving skills to the test - give it a try today!
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
